@@ -30,6 +30,18 @@
   
   self.view.backgroundColor = [UIColor blackColor];
   
+  //Canny边缘检测算法的实现
+  [self setupMatToUIImage];
+  
+}
+
+
+/**
+ Canny边缘检测算法的实现
+ */
+-(void)setupMatToUIImage {
+  
+  
   UIImage *image = [UIImage imageNamed:@"learn.jpg"];
   UIImageToMat(image, cvImage);
   
