@@ -8,6 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		BC1AAF4F20298E4A00D6CD9C /* learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF4E20298E4A00D6CD9C /* learn.jpg */; };
+		BC1AAF522029992500D6CD9C /* HaartrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AAF512029992500D6CD9C /* HaartrainingViewController.m */; };
+		BC1AAF8020299C0C00D6CD9C /* hogcascade_pedestrians.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5520299C0C00D6CD9C /* hogcascade_pedestrians.xml */; };
+		BC1AAF8120299C0C00D6CD9C /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5620299C0C00D6CD9C /* CMakeLists.txt */; };
+		BC1AAF8220299C0C00D6CD9C /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5820299C0C00D6CD9C /* haarcascade_upperbody.xml */; };
+		BC1AAF8320299C0C00D6CD9C /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5920299C0C00D6CD9C /* haarcascade_profileface.xml */; };
+		BC1AAF8420299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5A20299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml */; };
+		BC1AAF8520299C0C00D6CD9C /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5B20299C0C00D6CD9C /* haarcascade_eye.xml */; };
+		BC1AAF8620299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5C20299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml */; };
+		BC1AAF8720299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5D20299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml */; };
+		BC1AAF8820299C0C00D6CD9C /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5E20299C0C00D6CD9C /* haarcascade_righteye_2splits.xml */; };
+		BC1AAF8920299C0C00D6CD9C /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5F20299C0C00D6CD9C /* haarcascade_frontalface_alt.xml */; };
+		BC1AAF8A20299C0C00D6CD9C /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6020299C0C00D6CD9C /* haarcascade_lowerbody.xml */; };
+		BC1AAF8B20299C0C00D6CD9C /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6120299C0C00D6CD9C /* haarcascade_frontalface_default.xml */; };
+		BC1AAF8C20299C0C00D6CD9C /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6220299C0C00D6CD9C /* haarcascade_smile.xml */; };
+		BC1AAF8D20299C0C00D6CD9C /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6320299C0C00D6CD9C /* haarcascade_fullbody.xml */; };
+		BC1AAF8E20299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6420299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml */; };
+		BC1AAF8F20299C0C00D6CD9C /* trainingfaces_24-24.vec in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6620299C0C00D6CD9C /* trainingfaces_24-24.vec */; };
+		BC1AAF9020299C0C00D6CD9C /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6820299C0C00D6CD9C /* haarcascade_upperbody.xml */; };
+		BC1AAF9120299C0C00D6CD9C /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6920299C0C00D6CD9C /* haarcascade_frontalcatface_extended.xml */; };
+		BC1AAF9220299C0C00D6CD9C /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6A20299C0C00D6CD9C /* haarcascade_profileface.xml */; };
+		BC1AAF9320299C0C00D6CD9C /* haarcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6B20299C0C00D6CD9C /* haarcascade_frontalcatface.xml */; };
+		BC1AAF9420299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6C20299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml */; };
+		BC1AAF9520299C0C00D6CD9C /* haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6D20299C0C00D6CD9C /* haarcascade_eye.xml */; };
+		BC1AAF9620299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6E20299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml */; };
+		BC1AAF9720299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF6F20299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml */; };
+		BC1AAF9820299C0C00D6CD9C /* haarcascade_licence_plate_rus_16stages.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7020299C0C00D6CD9C /* haarcascade_licence_plate_rus_16stages.xml */; };
+		BC1AAF9920299C0C00D6CD9C /* haarcascade_righteye_2splits.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7120299C0C00D6CD9C /* haarcascade_righteye_2splits.xml */; };
+		BC1AAF9A20299C0C00D6CD9C /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7220299C0C00D6CD9C /* haarcascade_frontalface_alt.xml */; };
+		BC1AAF9B20299C0C00D6CD9C /* haarcascade_lowerbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7320299C0C00D6CD9C /* haarcascade_lowerbody.xml */; };
+		BC1AAF9C20299C0C00D6CD9C /* haarcascade_russian_plate_number.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7420299C0C00D6CD9C /* haarcascade_russian_plate_number.xml */; };
+		BC1AAF9D20299C0C00D6CD9C /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7520299C0C00D6CD9C /* haarcascade_frontalface_default.xml */; };
+		BC1AAF9E20299C0C00D6CD9C /* haarcascade_smile.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7620299C0C00D6CD9C /* haarcascade_smile.xml */; };
+		BC1AAF9F20299C0C00D6CD9C /* haarcascade_fullbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7720299C0C00D6CD9C /* haarcascade_fullbody.xml */; };
+		BC1AAFA020299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7820299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml */; };
+		BC1AAFA120299C0C00D6CD9C /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7A20299C0C00D6CD9C /* lbpcascade_frontalface.xml */; };
+		BC1AAFA220299C0C00D6CD9C /* lbpcascade_silverware.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7B20299C0C00D6CD9C /* lbpcascade_silverware.xml */; };
+		BC1AAFA320299C0C00D6CD9C /* lbpcascade_frontalcatface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7C20299C0C00D6CD9C /* lbpcascade_frontalcatface.xml */; };
+		BC1AAFA420299C0C00D6CD9C /* lbpcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7D20299C0C00D6CD9C /* lbpcascade_profileface.xml */; };
+		BC1AAFA520299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7E20299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml */; };
+		BC1AAFA620299C0C00D6CD9C /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7F20299C0C00D6CD9C /* readme.txt */; };
 		BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A38202408B8006007A0 /* AppDelegate.mm */; };
 		BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A3B202408B8006007A0 /* ViewController.mm */; };
 		BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBE1A3D202408B8006007A0 /* Main.storyboard */; };
@@ -43,6 +83,47 @@
 
 /* Begin PBXFileReference section */
 		BC1AAF4E20298E4A00D6CD9C /* learn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn.jpg; sourceTree = "<group>"; };
+		BC1AAF502029992500D6CD9C /* HaartrainingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaartrainingViewController.h; sourceTree = "<group>"; };
+		BC1AAF512029992500D6CD9C /* HaartrainingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaartrainingViewController.m; sourceTree = "<group>"; };
+		BC1AAF5520299C0C00D6CD9C /* hogcascade_pedestrians.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hogcascade_pedestrians.xml; sourceTree = "<group>"; };
+		BC1AAF5620299C0C00D6CD9C /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
+		BC1AAF5820299C0C00D6CD9C /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
+		BC1AAF5920299C0C00D6CD9C /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
+		BC1AAF5A20299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		BC1AAF5B20299C0C00D6CD9C /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		BC1AAF5C20299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
+		BC1AAF5D20299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		BC1AAF5E20299C0C00D6CD9C /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
+		BC1AAF5F20299C0C00D6CD9C /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		BC1AAF6020299C0C00D6CD9C /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
+		BC1AAF6120299C0C00D6CD9C /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		BC1AAF6220299C0C00D6CD9C /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		BC1AAF6320299C0C00D6CD9C /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
+		BC1AAF6420299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		BC1AAF6620299C0C00D6CD9C /* trainingfaces_24-24.vec */ = {isa = PBXFileReference; lastKnownFileType = file; path = "trainingfaces_24-24.vec"; sourceTree = "<group>"; };
+		BC1AAF6820299C0C00D6CD9C /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
+		BC1AAF6920299C0C00D6CD9C /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
+		BC1AAF6A20299C0C00D6CD9C /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
+		BC1AAF6B20299C0C00D6CD9C /* haarcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		BC1AAF6C20299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		BC1AAF6D20299C0C00D6CD9C /* haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye.xml; sourceTree = "<group>"; };
+		BC1AAF6E20299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lefteye_2splits.xml; sourceTree = "<group>"; };
+		BC1AAF6F20299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt_tree.xml; sourceTree = "<group>"; };
+		BC1AAF7020299C0C00D6CD9C /* haarcascade_licence_plate_rus_16stages.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_licence_plate_rus_16stages.xml; sourceTree = "<group>"; };
+		BC1AAF7120299C0C00D6CD9C /* haarcascade_righteye_2splits.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_righteye_2splits.xml; sourceTree = "<group>"; };
+		BC1AAF7220299C0C00D6CD9C /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		BC1AAF7320299C0C00D6CD9C /* haarcascade_lowerbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_lowerbody.xml; sourceTree = "<group>"; };
+		BC1AAF7420299C0C00D6CD9C /* haarcascade_russian_plate_number.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_russian_plate_number.xml; sourceTree = "<group>"; };
+		BC1AAF7520299C0C00D6CD9C /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default.xml; sourceTree = "<group>"; };
+		BC1AAF7620299C0C00D6CD9C /* haarcascade_smile.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_smile.xml; sourceTree = "<group>"; };
+		BC1AAF7720299C0C00D6CD9C /* haarcascade_fullbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_fullbody.xml; sourceTree = "<group>"; };
+		BC1AAF7820299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
+		BC1AAF7A20299C0C00D6CD9C /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		BC1AAF7B20299C0C00D6CD9C /* lbpcascade_silverware.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_silverware.xml; sourceTree = "<group>"; };
+		BC1AAF7C20299C0C00D6CD9C /* lbpcascade_frontalcatface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalcatface.xml; sourceTree = "<group>"; };
+		BC1AAF7D20299C0C00D6CD9C /* lbpcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_profileface.xml; sourceTree = "<group>"; };
+		BC1AAF7E20299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface_improved.xml; sourceTree = "<group>"; };
+		BC1AAF7F20299C0C00D6CD9C /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		BCBE1A34202408B8006007A0 /* opencv2Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencv2Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBE1A37202408B8006007A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCBE1A38202408B8006007A0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -99,9 +180,97 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1AAF5320299C0C00D6CD9C /* data */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AAF5420299C0C00D6CD9C /* hogcascades */,
+				BC1AAF5620299C0C00D6CD9C /* CMakeLists.txt */,
+				BC1AAF5720299C0C00D6CD9C /* haarcascades_cuda */,
+				BC1AAF6520299C0C00D6CD9C /* vec_files */,
+				BC1AAF6720299C0C00D6CD9C /* haarcascades */,
+				BC1AAF7920299C0C00D6CD9C /* lbpcascades */,
+				BC1AAF7F20299C0C00D6CD9C /* readme.txt */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		BC1AAF5420299C0C00D6CD9C /* hogcascades */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AAF5520299C0C00D6CD9C /* hogcascade_pedestrians.xml */,
+			);
+			path = hogcascades;
+			sourceTree = "<group>";
+		};
+		BC1AAF5720299C0C00D6CD9C /* haarcascades_cuda */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AAF5820299C0C00D6CD9C /* haarcascade_upperbody.xml */,
+				BC1AAF5920299C0C00D6CD9C /* haarcascade_profileface.xml */,
+				BC1AAF5A20299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml */,
+				BC1AAF5B20299C0C00D6CD9C /* haarcascade_eye.xml */,
+				BC1AAF5C20299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml */,
+				BC1AAF5D20299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml */,
+				BC1AAF5E20299C0C00D6CD9C /* haarcascade_righteye_2splits.xml */,
+				BC1AAF5F20299C0C00D6CD9C /* haarcascade_frontalface_alt.xml */,
+				BC1AAF6020299C0C00D6CD9C /* haarcascade_lowerbody.xml */,
+				BC1AAF6120299C0C00D6CD9C /* haarcascade_frontalface_default.xml */,
+				BC1AAF6220299C0C00D6CD9C /* haarcascade_smile.xml */,
+				BC1AAF6320299C0C00D6CD9C /* haarcascade_fullbody.xml */,
+				BC1AAF6420299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml */,
+			);
+			path = haarcascades_cuda;
+			sourceTree = "<group>";
+		};
+		BC1AAF6520299C0C00D6CD9C /* vec_files */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AAF6620299C0C00D6CD9C /* trainingfaces_24-24.vec */,
+			);
+			path = vec_files;
+			sourceTree = "<group>";
+		};
+		BC1AAF6720299C0C00D6CD9C /* haarcascades */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AAF6820299C0C00D6CD9C /* haarcascade_upperbody.xml */,
+				BC1AAF6920299C0C00D6CD9C /* haarcascade_frontalcatface_extended.xml */,
+				BC1AAF6A20299C0C00D6CD9C /* haarcascade_profileface.xml */,
+				BC1AAF6B20299C0C00D6CD9C /* haarcascade_frontalcatface.xml */,
+				BC1AAF6C20299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml */,
+				BC1AAF6D20299C0C00D6CD9C /* haarcascade_eye.xml */,
+				BC1AAF6E20299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml */,
+				BC1AAF6F20299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml */,
+				BC1AAF7020299C0C00D6CD9C /* haarcascade_licence_plate_rus_16stages.xml */,
+				BC1AAF7120299C0C00D6CD9C /* haarcascade_righteye_2splits.xml */,
+				BC1AAF7220299C0C00D6CD9C /* haarcascade_frontalface_alt.xml */,
+				BC1AAF7320299C0C00D6CD9C /* haarcascade_lowerbody.xml */,
+				BC1AAF7420299C0C00D6CD9C /* haarcascade_russian_plate_number.xml */,
+				BC1AAF7520299C0C00D6CD9C /* haarcascade_frontalface_default.xml */,
+				BC1AAF7620299C0C00D6CD9C /* haarcascade_smile.xml */,
+				BC1AAF7720299C0C00D6CD9C /* haarcascade_fullbody.xml */,
+				BC1AAF7820299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml */,
+			);
+			path = haarcascades;
+			sourceTree = "<group>";
+		};
+		BC1AAF7920299C0C00D6CD9C /* lbpcascades */ = {
+			isa = PBXGroup;
+			children = (
+				BC1AAF7A20299C0C00D6CD9C /* lbpcascade_frontalface.xml */,
+				BC1AAF7B20299C0C00D6CD9C /* lbpcascade_silverware.xml */,
+				BC1AAF7C20299C0C00D6CD9C /* lbpcascade_frontalcatface.xml */,
+				BC1AAF7D20299C0C00D6CD9C /* lbpcascade_profileface.xml */,
+				BC1AAF7E20299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml */,
+			);
+			path = lbpcascades;
+			sourceTree = "<group>";
+		};
 		BCBE1A2B202408B8006007A0 = {
 			isa = PBXGroup;
 			children = (
+				BC1AAF502029992500D6CD9C /* HaartrainingViewController.h */,
+				BC1AAF512029992500D6CD9C /* HaartrainingViewController.m */,
 				BCBE1A36202408B8006007A0 /* opencv2Framework */,
 				BCBE1A4F202408B8006007A0 /* opencv2FrameworkTests */,
 				BCBE1A5A202408B8006007A0 /* opencv2FrameworkUITests */,
@@ -133,6 +302,7 @@
 				BCBE1A3D202408B8006007A0 /* Main.storyboard */,
 				BC1AAF4E20298E4A00D6CD9C /* learn.jpg */,
 				BCBE1A40202408B8006007A0 /* Assets.xcassets */,
+				BC1AAF5320299C0C00D6CD9C /* data */,
 				BCBE1A42202408B8006007A0 /* LaunchScreen.storyboard */,
 				BCBE1A45202408B8006007A0 /* Info.plist */,
 				BCBE1A46202408B8006007A0 /* main.m */,
@@ -277,9 +447,48 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCBE1A44202408B8006007A0 /* LaunchScreen.storyboard in Resources */,
+				BC1AAF9820299C0C00D6CD9C /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
+				BC1AAF9920299C0C00D6CD9C /* haarcascade_righteye_2splits.xml in Resources */,
+				BC1AAF8320299C0C00D6CD9C /* haarcascade_profileface.xml in Resources */,
+				BC1AAF9D20299C0C00D6CD9C /* haarcascade_frontalface_default.xml in Resources */,
+				BC1AAF9420299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml in Resources */,
+				BC1AAF9C20299C0C00D6CD9C /* haarcascade_russian_plate_number.xml in Resources */,
+				BC1AAF8620299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml in Resources */,
+				BC1AAF8020299C0C00D6CD9C /* hogcascade_pedestrians.xml in Resources */,
+				BC1AAF9120299C0C00D6CD9C /* haarcascade_frontalcatface_extended.xml in Resources */,
+				BC1AAF9720299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				BC1AAF9F20299C0C00D6CD9C /* haarcascade_fullbody.xml in Resources */,
+				BC1AAF9020299C0C00D6CD9C /* haarcascade_upperbody.xml in Resources */,
+				BC1AAFA220299C0C00D6CD9C /* lbpcascade_silverware.xml in Resources */,
+				BC1AAF8120299C0C00D6CD9C /* CMakeLists.txt in Resources */,
 				BCBE1A41202408B8006007A0 /* Assets.xcassets in Resources */,
+				BC1AAFA120299C0C00D6CD9C /* lbpcascade_frontalface.xml in Resources */,
+				BC1AAF9620299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml in Resources */,
+				BC1AAF8720299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				BC1AAF9B20299C0C00D6CD9C /* haarcascade_lowerbody.xml in Resources */,
+				BC1AAFA020299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				BC1AAF9320299C0C00D6CD9C /* haarcascade_frontalcatface.xml in Resources */,
+				BC1AAF8220299C0C00D6CD9C /* haarcascade_upperbody.xml in Resources */,
+				BC1AAFA520299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml in Resources */,
+				BC1AAF8420299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml in Resources */,
+				BC1AAFA420299C0C00D6CD9C /* lbpcascade_profileface.xml in Resources */,
+				BC1AAF9A20299C0C00D6CD9C /* haarcascade_frontalface_alt.xml in Resources */,
 				BC1AAF4F20298E4A00D6CD9C /* learn.jpg in Resources */,
+				BC1AAFA320299C0C00D6CD9C /* lbpcascade_frontalcatface.xml in Resources */,
+				BC1AAF9E20299C0C00D6CD9C /* haarcascade_smile.xml in Resources */,
+				BC1AAF8B20299C0C00D6CD9C /* haarcascade_frontalface_default.xml in Resources */,
+				BC1AAF8D20299C0C00D6CD9C /* haarcascade_fullbody.xml in Resources */,
+				BC1AAF9520299C0C00D6CD9C /* haarcascade_eye.xml in Resources */,
+				BC1AAF8520299C0C00D6CD9C /* haarcascade_eye.xml in Resources */,
+				BC1AAF8F20299C0C00D6CD9C /* trainingfaces_24-24.vec in Resources */,
 				BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */,
+				BC1AAF8920299C0C00D6CD9C /* haarcascade_frontalface_alt.xml in Resources */,
+				BC1AAF8A20299C0C00D6CD9C /* haarcascade_lowerbody.xml in Resources */,
+				BC1AAFA620299C0C00D6CD9C /* readme.txt in Resources */,
+				BC1AAF8E20299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
+				BC1AAF8820299C0C00D6CD9C /* haarcascade_righteye_2splits.xml in Resources */,
+				BC1AAF8C20299C0C00D6CD9C /* haarcascade_smile.xml in Resources */,
+				BC1AAF9220299C0C00D6CD9C /* haarcascade_profileface.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC1AAF522029992500D6CD9C /* HaartrainingViewController.m in Sources */,
 				BCBE1A7720241608006007A0 /* UIImage+OpenCV.mm in Sources */,
 				BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */,
 				BCBE1A47202408B8006007A0 /* main.m in Sources */,
