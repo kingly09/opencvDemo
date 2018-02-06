@@ -1,0 +1,21 @@
+//
+//  opencv.pch
+//  opencv2Framework
+//
+//  Created by kingly on 2018/2/2.
+//  Copyright © 2018年 kingly. All rights reserved.
+//
+
+#ifndef opencv_pch
+#define opencv_pch
+
+#import <Availability.h>
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#endif
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#endif /* opencv_pch */
