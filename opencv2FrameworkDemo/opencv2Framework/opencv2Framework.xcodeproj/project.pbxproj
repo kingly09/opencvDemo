@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1AAF4F20298E4A00D6CD9C /* learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF4E20298E4A00D6CD9C /* learn.jpg */; };
 		BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A38202408B8006007A0 /* AppDelegate.mm */; };
 		BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A3B202408B8006007A0 /* ViewController.mm */; };
 		BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBE1A3D202408B8006007A0 /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC1AAF4E20298E4A00D6CD9C /* learn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn.jpg; sourceTree = "<group>"; };
 		BCBE1A34202408B8006007A0 /* opencv2Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencv2Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBE1A37202408B8006007A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCBE1A38202408B8006007A0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				BCBE1A3A202408B8006007A0 /* ViewController.h */,
 				BCBE1A3B202408B8006007A0 /* ViewController.mm */,
 				BCBE1A3D202408B8006007A0 /* Main.storyboard */,
+				BC1AAF4E20298E4A00D6CD9C /* learn.jpg */,
 				BCBE1A40202408B8006007A0 /* Assets.xcassets */,
 				BCBE1A42202408B8006007A0 /* LaunchScreen.storyboard */,
 				BCBE1A45202408B8006007A0 /* Info.plist */,
@@ -275,6 +278,7 @@
 			files = (
 				BCBE1A44202408B8006007A0 /* LaunchScreen.storyboard in Resources */,
 				BCBE1A41202408B8006007A0 /* Assets.xcassets in Resources */,
+				BC1AAF4F20298E4A00D6CD9C /* learn.jpg in Resources */,
 				BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
