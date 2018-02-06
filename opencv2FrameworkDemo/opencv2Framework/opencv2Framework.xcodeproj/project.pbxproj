@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BC1AAF4F20298E4A00D6CD9C /* learn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF4E20298E4A00D6CD9C /* learn.jpg */; };
-		BC1AAF522029992500D6CD9C /* HaartrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1AAF512029992500D6CD9C /* HaartrainingViewController.m */; };
+		BC1AAF522029992500D6CD9C /* HaartrainingViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC1AAF512029992500D6CD9C /* HaartrainingViewController.mm */; };
 		BC1AAF8020299C0C00D6CD9C /* hogcascade_pedestrians.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5520299C0C00D6CD9C /* hogcascade_pedestrians.xml */; };
 		BC1AAF8120299C0C00D6CD9C /* CMakeLists.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5620299C0C00D6CD9C /* CMakeLists.txt */; };
 		BC1AAF8220299C0C00D6CD9C /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF5820299C0C00D6CD9C /* haarcascade_upperbody.xml */; };
@@ -48,6 +48,9 @@
 		BC1AAFA420299C0C00D6CD9C /* lbpcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7D20299C0C00D6CD9C /* lbpcascade_profileface.xml */; };
 		BC1AAFA520299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7E20299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml */; };
 		BC1AAFA620299C0C00D6CD9C /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAF7F20299C0C00D6CD9C /* readme.txt */; };
+		BC1AAFAC2029AF9B00D6CD9C /* learn03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAFA92029AF9A00D6CD9C /* learn03.jpg */; };
+		BC1AAFAD2029AF9B00D6CD9C /* learn04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAFAA2029AF9B00D6CD9C /* learn04.jpg */; };
+		BC1AAFAE2029AF9B00D6CD9C /* learn02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAFAB2029AF9B00D6CD9C /* learn02.jpg */; };
 		BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A38202408B8006007A0 /* AppDelegate.mm */; };
 		BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A3B202408B8006007A0 /* ViewController.mm */; };
 		BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBE1A3D202408B8006007A0 /* Main.storyboard */; };
@@ -84,7 +87,7 @@
 /* Begin PBXFileReference section */
 		BC1AAF4E20298E4A00D6CD9C /* learn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn.jpg; sourceTree = "<group>"; };
 		BC1AAF502029992500D6CD9C /* HaartrainingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HaartrainingViewController.h; sourceTree = "<group>"; };
-		BC1AAF512029992500D6CD9C /* HaartrainingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HaartrainingViewController.m; sourceTree = "<group>"; };
+		BC1AAF512029992500D6CD9C /* HaartrainingViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = HaartrainingViewController.mm; sourceTree = "<group>"; };
 		BC1AAF5520299C0C00D6CD9C /* hogcascade_pedestrians.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = hogcascade_pedestrians.xml; sourceTree = "<group>"; };
 		BC1AAF5620299C0C00D6CD9C /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		BC1AAF5820299C0C00D6CD9C /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
@@ -124,6 +127,9 @@
 		BC1AAF7D20299C0C00D6CD9C /* lbpcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_profileface.xml; sourceTree = "<group>"; };
 		BC1AAF7E20299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface_improved.xml; sourceTree = "<group>"; };
 		BC1AAF7F20299C0C00D6CD9C /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		BC1AAFA92029AF9A00D6CD9C /* learn03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn03.jpg; sourceTree = "<group>"; };
+		BC1AAFAA2029AF9B00D6CD9C /* learn04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn04.jpg; sourceTree = "<group>"; };
+		BC1AAFAB2029AF9B00D6CD9C /* learn02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn02.jpg; sourceTree = "<group>"; };
 		BCBE1A34202408B8006007A0 /* opencv2Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencv2Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBE1A37202408B8006007A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCBE1A38202408B8006007A0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -270,7 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				BC1AAF502029992500D6CD9C /* HaartrainingViewController.h */,
-				BC1AAF512029992500D6CD9C /* HaartrainingViewController.m */,
+				BC1AAF512029992500D6CD9C /* HaartrainingViewController.mm */,
 				BCBE1A36202408B8006007A0 /* opencv2Framework */,
 				BCBE1A4F202408B8006007A0 /* opencv2FrameworkTests */,
 				BCBE1A5A202408B8006007A0 /* opencv2FrameworkUITests */,
@@ -300,6 +306,9 @@
 				BCBE1A3A202408B8006007A0 /* ViewController.h */,
 				BCBE1A3B202408B8006007A0 /* ViewController.mm */,
 				BCBE1A3D202408B8006007A0 /* Main.storyboard */,
+				BC1AAFAB2029AF9B00D6CD9C /* learn02.jpg */,
+				BC1AAFA92029AF9A00D6CD9C /* learn03.jpg */,
+				BC1AAFAA2029AF9B00D6CD9C /* learn04.jpg */,
 				BC1AAF4E20298E4A00D6CD9C /* learn.jpg */,
 				BCBE1A40202408B8006007A0 /* Assets.xcassets */,
 				BC1AAF5320299C0C00D6CD9C /* data */,
@@ -454,6 +463,7 @@
 				BC1AAF9420299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml in Resources */,
 				BC1AAF9C20299C0C00D6CD9C /* haarcascade_russian_plate_number.xml in Resources */,
 				BC1AAF8620299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml in Resources */,
+				BC1AAFAE2029AF9B00D6CD9C /* learn02.jpg in Resources */,
 				BC1AAF8020299C0C00D6CD9C /* hogcascade_pedestrians.xml in Resources */,
 				BC1AAF9120299C0C00D6CD9C /* haarcascade_frontalcatface_extended.xml in Resources */,
 				BC1AAF9720299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml in Resources */,
@@ -463,12 +473,14 @@
 				BC1AAF8120299C0C00D6CD9C /* CMakeLists.txt in Resources */,
 				BCBE1A41202408B8006007A0 /* Assets.xcassets in Resources */,
 				BC1AAFA120299C0C00D6CD9C /* lbpcascade_frontalface.xml in Resources */,
+				BC1AAFAD2029AF9B00D6CD9C /* learn04.jpg in Resources */,
 				BC1AAF9620299C0C00D6CD9C /* haarcascade_lefteye_2splits.xml in Resources */,
 				BC1AAF8720299C0C00D6CD9C /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				BC1AAF9B20299C0C00D6CD9C /* haarcascade_lowerbody.xml in Resources */,
 				BC1AAFA020299C0C00D6CD9C /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 				BC1AAF9320299C0C00D6CD9C /* haarcascade_frontalcatface.xml in Resources */,
 				BC1AAF8220299C0C00D6CD9C /* haarcascade_upperbody.xml in Resources */,
+				BC1AAFAC2029AF9B00D6CD9C /* learn03.jpg in Resources */,
 				BC1AAFA520299C0C00D6CD9C /* lbpcascade_frontalface_improved.xml in Resources */,
 				BC1AAF8420299C0C00D6CD9C /* haarcascade_frontalface_alt2.xml in Resources */,
 				BC1AAFA420299C0C00D6CD9C /* lbpcascade_profileface.xml in Resources */,
@@ -513,7 +525,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC1AAF522029992500D6CD9C /* HaartrainingViewController.m in Sources */,
+				BC1AAF522029992500D6CD9C /* HaartrainingViewController.mm in Sources */,
 				BCBE1A7720241608006007A0 /* UIImage+OpenCV.mm in Sources */,
 				BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */,
 				BCBE1A47202408B8006007A0 /* main.m in Sources */,
