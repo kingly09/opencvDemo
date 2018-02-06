@@ -12,11 +12,14 @@
 #import <opencv2/imgproc/types_c.h>
 #import <opencv2/imgcodecs/ios.h>
 
+#import "HaartrainingViewController.h"
+
 @interface ViewController ()
 {
   cv::Mat cvImage;
 }
 
+@property (weak, nonatomic) IBOutlet UIImageView *originalPicture;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
 
@@ -35,6 +38,32 @@
   
 }
 
+- (IBAction)onClickSelectFunction:(id)sender {
+  
+  UIAlertAction *haarAction = [UIAlertAction actionWithTitle:@"使用Haar特征分类器" style:UIAlertActionStyleDefault handler:^(UIAlertAction *haarAct){
+    
+    [self haartraining];
+    
+  }];
+
+  UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *cancelAct){}];
+  UIAlertController *alerCtr = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+  [alerCtr addAction:haarAction];
+  [alerCtr addAction:cancel];
+  [self presentViewController:alerCtr animated:YES completion:^{}];
+  
+
+}
+
+/**
+ 在OpenCV中使用Haar特征分类器来对图像中的人脸进行检测和识别
+ */
+-(void)haartraining {
+  
+  HaartrainingViewController *haartrainingVC = [[HaartrainingViewController alloc] init];
+  [self.navigationController pushViewController:haartrainingVC animated:YES];
+  
+}
 
 /**
  Canny边缘检测算法的实现
@@ -139,5 +168,46 @@
   
   return finalImage;
 }
+
+
+
+// NOTE you SHOULD cvReleaseImage() for the return value when end of the code.
+- (IplImage *)CreateIplImageFromUIImage:(UIImage *)image {
+  CGImageRef imageRef = image.CGImage;
+  
+  CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+  IplImage *iplimage = cvCreateImage(cvSize(image.size.width, image.size.height), IPL_DEPTH_8U, 4);
+  CGContextRef contextRef = CGBitmapContextCreate(iplimage->imageData, iplimage->width, iplimage->height,
+                                                  iplimage->depth, iplimage->widthStep,
+                                                  colorSpace, kCGImageAlphaPremultipliedLast|kCGBitmapByteOrderDefault);
+  CGContextDrawImage(contextRef, CGRectMake(0, 0, image.size.width, image.size.height), imageRef);
+  CGContextRelease(contextRef);
+  CGColorSpaceRelease(colorSpace);
+  
+  IplImage *ret = cvCreateImage(cvGetSize(iplimage), IPL_DEPTH_8U, 3);
+  cvCvtColor(iplimage, ret, CV_RGBA2BGR);
+  cvReleaseImage(&iplimage);
+  
+  return ret;
+}
+
+// NOTE You should convert color mode as RGB before passing to this function
+- (UIImage *)UIImageFromIplImage:(IplImage *)image {
+  NSLog(@"IplImage (%d, %d) %d bits by %d channels, %d bytes/row %s", image->width, image->height, image->depth, image->nChannels, image->widthStep, image->channelSeq);
+  
+  CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();
+  NSData *data = [NSData dataWithBytes:image->imageData length:image->imageSize];
+  CGDataProviderRef provider = CGDataProviderCreateWithCFData((CFDataRef)data);
+  CGImageRef imageRef = CGImageCreate(image->width, image->height,
+                                      image->depth, image->depth * image->nChannels, image->widthStep,
+                                      colorSpace, kCGImageAlphaNone|kCGBitmapByteOrderDefault,
+                                      provider, NULL, false, kCGRenderingIntentDefault);
+  UIImage *ret = [UIImage imageWithCGImage:imageRef];
+  CGImageRelease(imageRef);
+  CGDataProviderRelease(provider);
+  CGColorSpaceRelease(colorSpace);
+  return ret;
+}
+
 
 @end
