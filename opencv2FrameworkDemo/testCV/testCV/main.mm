@@ -7,20 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <iostream>
-
-//using namespace std;
 #include <opencv2/opencv.hpp>
-//using namespace cv;
 
 int main(int argc, const char * argv[]) {
   
   
+  IplImage* img = cvLoadImage( argv[1] );
+  cvNamedWindow("Example1", CV_WINDOW_AUTOSIZE );
+  cvShowImage("Example1", img );
+  cvWaitKey(0);
+  cvReleaseImage( &img );
+  cvDestroyWindow("Example1");
+  
   @autoreleasepool {
       // insert code here...
-      NSLog(@"Hello, World!");
+    NSLog(@"Hello, World!");
     std::cout << "Hello, World!\n";
-    
     
   }
   return 0;

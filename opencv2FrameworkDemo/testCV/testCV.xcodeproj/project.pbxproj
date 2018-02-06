@@ -45,6 +45,7 @@
 		BC1AAE0F2029552300D6CD9C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC1AAE112029553800D6CD9C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		BC1AAE132029591300D6CD9C /* libopencv_ml.3.4.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_ml.3.4.0.dylib; path = ../../../../usr/local/Cellar/opencv/3.4.0_1/lib/libopencv_ml.3.4.0.dylib; sourceTree = "<group>"; };
+		BC1AAE16202980D700D6CD9C /* opencv.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = opencv.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +89,7 @@
 		BC1AADE520284AF000D6CD9C /* testCV */ = {
 			isa = PBXGroup;
 			children = (
+				BC1AAE16202980D700D6CD9C /* opencv.pch */,
 				BC1AADE620284AF000D6CD9C /* main.mm */,
 			);
 			path = testCV;
@@ -283,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KE5MJRYE2S;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = testCV/opencv.pch;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"/usr/local/lib/**",
@@ -299,6 +302,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KE5MJRYE2S;
 				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREFIX_HEADER = testCV/opencv.pch;
 				HEADER_SEARCH_PATHS = /usr/local/include;
 				LIBRARY_SEARCH_PATHS = (
 					"/usr/local/lib/**",
