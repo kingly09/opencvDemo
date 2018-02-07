@@ -41,8 +41,9 @@
   imageView02.contentMode =  UIViewContentModeScaleAspectFill;
   [self.view addSubview:imageView02];
   
+
   
-  [self opencvFaceDetect:[UIImage imageNamed:@"learn04.jpg"]];
+  [self opencvFaceDetect:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,7 +101,10 @@
     int scale = 2;
     
     // Load XML
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_default" ofType:@"xml"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
+    
+    NSLog(@"path:%@",path);
+    
     CvHaarClassifierCascade* cascade = (CvHaarClassifierCascade*)cvLoad([path cStringUsingEncoding:NSASCIIStringEncoding], NULL, NULL, NULL);
     CvMemStorage* storage = cvCreateMemStorage(0);
     
