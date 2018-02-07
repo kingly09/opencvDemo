@@ -33,6 +33,11 @@
 		BC6645A5202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC6645A4202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml */; };
 		BC6645A7202AD568008F0CB4 /* haarcascade_frontalface_default_new.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC6645A6202AD567008F0CB4 /* haarcascade_frontalface_default_new.xml */; };
 		BC6645AB202AD754008F0CB4 /* haarcascade_frontalface_default_old.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC6645AA202AD754008F0CB4 /* haarcascade_frontalface_default_old.xml */; };
+		BC75299A202B01DF00CD4549 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC752999202B01DF00CD4549 /* CoreMedia.framework */; };
+		BC75299C202B01F600CD4549 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC75299B202B01F600CD4549 /* CoreImage.framework */; };
+		BC75299E202B020200CD4549 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC75299D202B020200CD4549 /* AVFoundation.framework */; };
+		BC7529A0202B021100CD4549 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC75299F202B021100CD4549 /* AssetsLibrary.framework */; };
+		BC7529A3202B02E200CD4549 /* CvVideoCameraViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC7529A2202B02E200CD4549 /* CvVideoCameraViewController.mm */; };
 		BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A38202408B8006007A0 /* AppDelegate.mm */; };
 		BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A3B202408B8006007A0 /* ViewController.mm */; };
 		BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBE1A3D202408B8006007A0 /* Main.storyboard */; };
@@ -94,6 +99,12 @@
 		BC6645A4202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt3.xml; sourceTree = "<group>"; };
 		BC6645A6202AD567008F0CB4 /* haarcascade_frontalface_default_new.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default_new.xml; sourceTree = "<group>"; };
 		BC6645AA202AD754008F0CB4 /* haarcascade_frontalface_default_old.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default_old.xml; sourceTree = "<group>"; };
+		BC752999202B01DF00CD4549 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BC75299B202B01F600CD4549 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		BC75299D202B020200CD4549 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BC75299F202B021100CD4549 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		BC7529A1202B02E200CD4549 /* CvVideoCameraViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CvVideoCameraViewController.h; sourceTree = "<group>"; };
+		BC7529A2202B02E200CD4549 /* CvVideoCameraViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CvVideoCameraViewController.mm; sourceTree = "<group>"; };
 		BCBE1A34202408B8006007A0 /* opencv2Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencv2Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBE1A37202408B8006007A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCBE1A38202408B8006007A0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -125,6 +136,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC7529A0202B021100CD4549 /* AssetsLibrary.framework in Frameworks */,
+				BC75299E202B020200CD4549 /* AVFoundation.framework in Frameworks */,
+				BC75299C202B01F600CD4549 /* CoreImage.framework in Frameworks */,
+				BC75299A202B01DF00CD4549 /* CoreMedia.framework in Frameworks */,
 				BC6645A3202AD30E008F0CB4 /* Accelerate.framework in Frameworks */,
 				BCBE1A74202412C5006007A0 /* AudioToolbox.framework in Frameworks */,
 				BCBE1A72202412B3006007A0 /* CoreGraphics.framework in Frameworks */,
@@ -222,6 +237,8 @@
 				BCBE1A45202408B8006007A0 /* Info.plist */,
 				BCBE1A46202408B8006007A0 /* main.m */,
 				BCBE1A6B2024114B006007A0 /* opencv.pch */,
+				BC7529A1202B02E200CD4549 /* CvVideoCameraViewController.h */,
+				BC7529A2202B02E200CD4549 /* CvVideoCameraViewController.mm */,
 			);
 			path = opencv2Framework;
 			sourceTree = "<group>";
@@ -247,6 +264,10 @@
 		BCBE1A6C20241293006007A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC75299F202B021100CD4549 /* AssetsLibrary.framework */,
+				BC75299D202B020200CD4549 /* AVFoundation.framework */,
+				BC75299B202B01F600CD4549 /* CoreImage.framework */,
+				BC752999202B01DF00CD4549 /* CoreMedia.framework */,
 				BC6645A2202AD30E008F0CB4 /* Accelerate.framework */,
 				BCBE1A73202412C5006007A0 /* AudioToolbox.framework */,
 				BCBE1A71202412B3006007A0 /* CoreGraphics.framework */,
@@ -415,6 +436,7 @@
 			files = (
 				BC1AAF522029992500D6CD9C /* HaartrainingViewController.mm in Sources */,
 				BCBE1A7720241608006007A0 /* UIImage+OpenCV.mm in Sources */,
+				BC7529A3202B02E200CD4549 /* CvVideoCameraViewController.mm in Sources */,
 				BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */,
 				BCBE1A47202408B8006007A0 /* main.m in Sources */,
 				BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */,

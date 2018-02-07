@@ -13,7 +13,7 @@
 #import <opencv2/imgcodecs/ios.h>
 
 #import "HaartrainingViewController.h"
-
+#import "CvVideoCameraViewController.h"
 
 @interface ViewController ()
 {
@@ -46,10 +46,19 @@
     [self haartraining];
     
   }];
+  
+  UIAlertAction *videoCameraAction = [UIAlertAction actionWithTitle:@"获取的实时图像进行处理" style:UIAlertActionStyleDefault handler:^(UIAlertAction *videoCameraAct){
+    
+    [self videoCamera];
+    
+  }];
+  
+  
 
   UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *cancelAct){}];
   UIAlertController *alerCtr = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
   [alerCtr addAction:haarAction];
+  [alerCtr addAction:videoCameraAction];
   [alerCtr addAction:cancel];
   [self presentViewController:alerCtr animated:YES completion:^{}];
   
@@ -63,6 +72,16 @@
   
   HaartrainingViewController *haartrainingVC = [[HaartrainingViewController alloc] init];
   [self.navigationController pushViewController:haartrainingVC animated:YES];
+  
+}
+
+/**
+ 对获取的实时图像进行处理
+ */
+-(void)videoCamera {
+  
+  CvVideoCameraViewController *cvVideoCameraView = [[CvVideoCameraViewController alloc] init];
+  [self.navigationController pushViewController:cvVideoCameraView animated:YES];
   
 }
 
