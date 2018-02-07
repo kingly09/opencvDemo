@@ -30,7 +30,7 @@
   
    imageView = [[UIImageView alloc] init];
    imageView.frame = CGRectMake(20,80,self.view.frame.size.width - 40,300);
-   imageView.image = [UIImage imageNamed:@"learn03.jpg"];
+   imageView.image = [UIImage imageNamed:@"m2u.jpg"];
    imageView.contentMode =  UIViewContentModeScaleAspectFill;
    [self.view addSubview:imageView];
   
@@ -41,9 +41,8 @@
   imageView02.contentMode =  UIViewContentModeScaleAspectFill;
   [self.view addSubview:imageView02];
   
-
-  
   [self opencvFaceDetect:nil];
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -101,10 +100,38 @@
     int scale = 2;
     
     // Load XML
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
-    NSLog(@"path:%@",path);
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"haarcascade_frontalface_alt2" ofType:@"xml"];
+//    
+//    NSLog(@"path:%@",path);
+//    
+//    CvHaarClassifierCascade* cascade = (CvHaarClassifierCascade*)cvLoad([path cStringUsingEncoding:NSASCIIStringEncoding], NULL, NULL, NULL);
+
+       NSString * xmlPath = [[[NSBundle mainBundle] resourcePath]stringByAppendingPathComponent:[NSString stringWithFormat:@"haarcascade_frontalface_default_old.xml"]];
     
-    CvHaarClassifierCascade* cascade = (CvHaarClassifierCascade*)cvLoad([path cStringUsingEncoding:NSASCIIStringEncoding], NULL, NULL, NULL);
+        NSLog(@"path:%@",xmlPath);
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:xmlPath]) {
+     
+    }
+    else {
+      NSLog(@"xmlPath 不存在 \n 路径为:%@",xmlPath);
+      return;
+    }
+    
+ 
+    
+//     CvFileStorage* fs = cvOpenFileStorage([xmlPath cStringUsingEncoding:NSUTF8StringEncoding], 0, CV_STORAGE_READ );
+//     CvFileNode* points = cvGetFileNodeByName( fs, 0, "points" );
+//     CvHaarClassifierCascade *cascade = (CvHaarClassifierCascade *)cvRead(fs, points);
+    
+     CvHaarClassifierCascade *cascade = (CvHaarClassifierCascade*)cvLoad([xmlPath cStringUsingEncoding:NSASCIIStringEncoding], NULL, NULL, NULL);
+    
+    if (!cascade) {
+      NSLog(@"ERROR: Could not load classifier cascade\n");
+      return;
+    }
+    
     CvMemStorage* storage = cvCreateMemStorage(0);
     
     // Detect faces and draw rectangle on them
