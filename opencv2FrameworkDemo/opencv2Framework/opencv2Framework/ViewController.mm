@@ -13,7 +13,7 @@
 #import <opencv2/imgcodecs/ios.h>
 
 #import "HaartrainingViewController.h"
-#import "FaceDetectionViewController.h"
+
 
 @interface ViewController ()
 {

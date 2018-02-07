@@ -33,11 +33,6 @@
 		BC6645A5202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC6645A4202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml */; };
 		BC6645A7202AD568008F0CB4 /* haarcascade_frontalface_default_new.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC6645A6202AD567008F0CB4 /* haarcascade_frontalface_default_new.xml */; };
 		BC6645AB202AD754008F0CB4 /* haarcascade_frontalface_default_old.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC6645AA202AD754008F0CB4 /* haarcascade_frontalface_default_old.xml */; };
-		BC6645AD202AD78D008F0CB4 /* m2u.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC6645AC202AD78D008F0CB4 /* m2u.jpg */; };
-		BC6645B0202AD7DE008F0CB4 /* FaceDetectionViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC6645AF202AD7DE008F0CB4 /* FaceDetectionViewController.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BC6645B2202AD7E5008F0CB4 /* FaceDetectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC6645B1202AD7E5008F0CB4 /* FaceDetectionViewController.xib */; };
-		BC6645B4202AD821008F0CB4 /* haha.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6645B3202AD821008F0CB4 /* haha.png */; };
-		BC6645B6202AD828008F0CB4 /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BC6645B5202AD827008F0CB4 /* Tink.aiff */; };
 		BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A38202408B8006007A0 /* AppDelegate.mm */; };
 		BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBE1A3B202408B8006007A0 /* ViewController.mm */; };
 		BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCBE1A3D202408B8006007A0 /* Main.storyboard */; };
@@ -99,12 +94,6 @@
 		BC6645A4202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt3.xml; sourceTree = "<group>"; };
 		BC6645A6202AD567008F0CB4 /* haarcascade_frontalface_default_new.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default_new.xml; sourceTree = "<group>"; };
 		BC6645AA202AD754008F0CB4 /* haarcascade_frontalface_default_old.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_default_old.xml; sourceTree = "<group>"; };
-		BC6645AC202AD78D008F0CB4 /* m2u.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = m2u.jpg; sourceTree = "<group>"; };
-		BC6645AE202AD7DE008F0CB4 /* FaceDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetectionViewController.h; sourceTree = "<group>"; };
-		BC6645AF202AD7DE008F0CB4 /* FaceDetectionViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetectionViewController.mm; sourceTree = "<group>"; };
-		BC6645B1202AD7E5008F0CB4 /* FaceDetectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FaceDetectionViewController.xib; sourceTree = "<group>"; };
-		BC6645B3202AD821008F0CB4 /* haha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = haha.png; sourceTree = "<group>"; };
-		BC6645B5202AD827008F0CB4 /* Tink.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Tink.aiff; sourceTree = "<group>"; };
 		BCBE1A34202408B8006007A0 /* opencv2Framework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opencv2Framework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBE1A37202408B8006007A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BCBE1A38202408B8006007A0 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
@@ -194,9 +183,6 @@
 			children = (
 				BC1AAF502029992500D6CD9C /* HaartrainingViewController.h */,
 				BC1AAF512029992500D6CD9C /* HaartrainingViewController.mm */,
-				BC6645AE202AD7DE008F0CB4 /* FaceDetectionViewController.h */,
-				BC6645AF202AD7DE008F0CB4 /* FaceDetectionViewController.mm */,
-				BC6645B1202AD7E5008F0CB4 /* FaceDetectionViewController.xib */,
 				BCBE1A36202408B8006007A0 /* opencv2Framework */,
 				BCBE1A4F202408B8006007A0 /* opencv2FrameworkTests */,
 				BCBE1A5A202408B8006007A0 /* opencv2FrameworkUITests */,
@@ -227,9 +213,6 @@
 				BCBE1A3A202408B8006007A0 /* ViewController.h */,
 				BCBE1A3B202408B8006007A0 /* ViewController.mm */,
 				BCBE1A3D202408B8006007A0 /* Main.storyboard */,
-				BC6645AC202AD78D008F0CB4 /* m2u.jpg */,
-				BC6645B5202AD827008F0CB4 /* Tink.aiff */,
-				BC6645B3202AD821008F0CB4 /* haha.png */,
 				BC1AAFAB2029AF9B00D6CD9C /* learn02.jpg */,
 				BC1AAFA92029AF9A00D6CD9C /* learn03.jpg */,
 				BC1AAFAA2029AF9B00D6CD9C /* learn04.jpg */,
@@ -384,15 +367,11 @@
 				BC664593202A9EED008F0CB4 /* haarcascade_profileface.xml in Resources */,
 				BC6645AB202AD754008F0CB4 /* haarcascade_frontalface_default_old.xml in Resources */,
 				BC664594202A9EED008F0CB4 /* haarcascade_frontalcatface.xml in Resources */,
-				BC6645B2202AD7E5008F0CB4 /* FaceDetectionViewController.xib in Resources */,
 				BC66459D202A9EED008F0CB4 /* haarcascade_russian_plate_number.xml in Resources */,
 				BC664598202A9EED008F0CB4 /* haarcascade_frontalface_alt_tree.xml in Resources */,
 				BC664596202A9EED008F0CB4 /* haarcascade_eye.xml in Resources */,
 				BC664591202A9EED008F0CB4 /* haarcascade_upperbody.xml in Resources */,
 				BC664599202A9EED008F0CB4 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
-				BC6645B4202AD821008F0CB4 /* haha.png in Resources */,
-				BC6645B6202AD828008F0CB4 /* Tink.aiff in Resources */,
-				BC6645AD202AD78D008F0CB4 /* m2u.jpg in Resources */,
 				BC66459F202A9EED008F0CB4 /* haarcascade_smile.xml in Resources */,
 				BC664597202A9EED008F0CB4 /* haarcascade_lefteye_2splits.xml in Resources */,
 				BC66459A202A9EED008F0CB4 /* haarcascade_righteye_2splits.xml in Resources */,
@@ -435,7 +414,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC1AAF522029992500D6CD9C /* HaartrainingViewController.mm in Sources */,
-				BC6645B0202AD7DE008F0CB4 /* FaceDetectionViewController.mm in Sources */,
 				BCBE1A7720241608006007A0 /* UIImage+OpenCV.mm in Sources */,
 				BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */,
 				BCBE1A47202408B8006007A0 /* main.m in Sources */,
