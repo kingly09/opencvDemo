@@ -15,6 +15,7 @@
 #import "HaartrainingViewController.h"
 #import "CvVideoCameraViewController.h"
 #import "KYFaceComparisonVC.h"
+#import "CascadeClassifierViewController.h"
 
 @interface ViewController ()
 {
@@ -60,6 +61,11 @@
     
   }];
   
+  UIAlertAction *cascadeClassifierAction = [UIAlertAction actionWithTitle:@"使用CascadeClassifier检测人脸" style:UIAlertActionStyleDefault handler:^(UIAlertAction *cascadeClassifierAct){
+    
+    [self cascadeClassifier];
+    
+  }];
   
 
   UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *cancelAct){}];
@@ -67,6 +73,7 @@
   [alerCtr addAction:haarAction];
   [alerCtr addAction:videoCameraAction];
   [alerCtr addAction:faceComparisonAction];
+  [alerCtr addAction:cascadeClassifierAction];
   [alerCtr addAction:cancel];
   [self presentViewController:alerCtr animated:YES completion:^{}];
   
@@ -99,6 +106,15 @@
   [self.navigationController pushViewController:faceComparison animated:YES];
   
 }
+
+-(void)cascadeClassifier {
+  
+  CascadeClassifierViewController *cascadeClassifier = [[CascadeClassifierViewController alloc] init];
+  [self.navigationController pushViewController:cascadeClassifier animated:YES];
+  
+  
+}
+
 
 /**
  Canny边缘检测算法的实现
