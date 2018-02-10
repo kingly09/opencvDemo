@@ -12,6 +12,10 @@
 		BC1AAFAC2029AF9B00D6CD9C /* learn03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAFA92029AF9A00D6CD9C /* learn03.jpg */; };
 		BC1AAFAD2029AF9B00D6CD9C /* learn04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAFAA2029AF9B00D6CD9C /* learn04.jpg */; };
 		BC1AAFAE2029AF9B00D6CD9C /* learn02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1AAFAB2029AF9B00D6CD9C /* learn02.jpg */; };
+		BC47D7CE202ED62F006C6FB4 /* KYFaceComparisonVC.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC47D7CD202ED62F006C6FB4 /* KYFaceComparisonVC.mm */; };
+		BC47D7D2202EDB66006C6FB4 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7CF202EDB65006C6FB4 /* 1.jpeg */; };
+		BC47D7D3202EDB66006C6FB4 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7D0202EDB65006C6FB4 /* 3.jpeg */; };
+		BC47D7D4202EDB66006C6FB4 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7D1202EDB66006C6FB4 /* 2.jpeg */; };
 		BC664591202A9EED008F0CB4 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC664580202A9EED008F0CB4 /* haarcascade_upperbody.xml */; };
 		BC664592202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC664581202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml */; };
 		BC664593202A9EED008F0CB4 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC664582202A9EED008F0CB4 /* haarcascade_profileface.xml */; };
@@ -78,6 +82,11 @@
 		BC1AAFA92029AF9A00D6CD9C /* learn03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn03.jpg; sourceTree = "<group>"; };
 		BC1AAFAA2029AF9B00D6CD9C /* learn04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn04.jpg; sourceTree = "<group>"; };
 		BC1AAFAB2029AF9B00D6CD9C /* learn02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = learn02.jpg; sourceTree = "<group>"; };
+		BC47D7CC202ED62F006C6FB4 /* KYFaceComparisonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KYFaceComparisonVC.h; sourceTree = "<group>"; };
+		BC47D7CD202ED62F006C6FB4 /* KYFaceComparisonVC.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KYFaceComparisonVC.mm; sourceTree = "<group>"; };
+		BC47D7CF202EDB65006C6FB4 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		BC47D7D0202EDB65006C6FB4 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		BC47D7D1202EDB66006C6FB4 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		BC664580202A9EED008F0CB4 /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
 		BC664581202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
 		BC664582202A9EED008F0CB4 /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
@@ -233,12 +242,17 @@
 				BC1AAFAA2029AF9B00D6CD9C /* learn04.jpg */,
 				BC1AAF4E20298E4A00D6CD9C /* learn.jpg */,
 				BCBE1A40202408B8006007A0 /* Assets.xcassets */,
+				BC47D7CF202EDB65006C6FB4 /* 1.jpeg */,
+				BC47D7D1202EDB66006C6FB4 /* 2.jpeg */,
+				BC47D7D0202EDB65006C6FB4 /* 3.jpeg */,
 				BCBE1A42202408B8006007A0 /* LaunchScreen.storyboard */,
 				BCBE1A45202408B8006007A0 /* Info.plist */,
 				BCBE1A46202408B8006007A0 /* main.m */,
 				BCBE1A6B2024114B006007A0 /* opencv.pch */,
 				BC7529A1202B02E200CD4549 /* CvVideoCameraViewController.h */,
 				BC7529A2202B02E200CD4549 /* CvVideoCameraViewController.mm */,
+				BC47D7CC202ED62F006C6FB4 /* KYFaceComparisonVC.h */,
+				BC47D7CD202ED62F006C6FB4 /* KYFaceComparisonVC.mm */,
 			);
 			path = opencv2Framework;
 			sourceTree = "<group>";
@@ -390,17 +404,20 @@
 				BC664594202A9EED008F0CB4 /* haarcascade_frontalcatface.xml in Resources */,
 				BC66459D202A9EED008F0CB4 /* haarcascade_russian_plate_number.xml in Resources */,
 				BC664598202A9EED008F0CB4 /* haarcascade_frontalface_alt_tree.xml in Resources */,
+				BC47D7D2202EDB66006C6FB4 /* 1.jpeg in Resources */,
 				BC664596202A9EED008F0CB4 /* haarcascade_eye.xml in Resources */,
 				BC664591202A9EED008F0CB4 /* haarcascade_upperbody.xml in Resources */,
 				BC664599202A9EED008F0CB4 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
 				BC66459F202A9EED008F0CB4 /* haarcascade_smile.xml in Resources */,
 				BC664597202A9EED008F0CB4 /* haarcascade_lefteye_2splits.xml in Resources */,
+				BC47D7D3202EDB66006C6FB4 /* 3.jpeg in Resources */,
 				BC66459A202A9EED008F0CB4 /* haarcascade_righteye_2splits.xml in Resources */,
 				BC6645A5202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml in Resources */,
 				BC664592202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml in Resources */,
 				BC1AAFAE2029AF9B00D6CD9C /* learn02.jpg in Resources */,
 				BC664595202A9EED008F0CB4 /* haarcascade_frontalface_alt2.xml in Resources */,
 				BC6645A0202A9EED008F0CB4 /* haarcascade_fullbody.xml in Resources */,
+				BC47D7D4202EDB66006C6FB4 /* 2.jpeg in Resources */,
 				BCBE1A41202408B8006007A0 /* Assets.xcassets in Resources */,
 				BC1AAFAD2029AF9B00D6CD9C /* learn04.jpg in Resources */,
 				BC6645A7202AD568008F0CB4 /* haarcascade_frontalface_default_new.xml in Resources */,
@@ -438,6 +455,7 @@
 				BCBE1A7720241608006007A0 /* UIImage+OpenCV.mm in Sources */,
 				BC7529A3202B02E200CD4549 /* CvVideoCameraViewController.mm in Sources */,
 				BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */,
+				BC47D7CE202ED62F006C6FB4 /* KYFaceComparisonVC.mm in Sources */,
 				BCBE1A47202408B8006007A0 /* main.m in Sources */,
 				BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */,
 			);

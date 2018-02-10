@@ -14,6 +14,7 @@
 
 #import "HaartrainingViewController.h"
 #import "CvVideoCameraViewController.h"
+#import "KYFaceComparisonVC.h"
 
 @interface ViewController ()
 {
@@ -53,12 +54,19 @@
     
   }];
   
+  UIAlertAction *faceComparisonAction = [UIAlertAction actionWithTitle:@"实现的人脸识别匹配" style:UIAlertActionStyleDefault handler:^(UIAlertAction *faceComparisonAct){
+    
+    [self faceComparison];
+    
+  }];
+  
   
 
   UIAlertAction *cancel = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction *cancelAct){}];
   UIAlertController *alerCtr = [UIAlertController alertControllerWithTitle:nil message:nil preferredStyle:UIAlertControllerStyleActionSheet];
   [alerCtr addAction:haarAction];
   [alerCtr addAction:videoCameraAction];
+  [alerCtr addAction:faceComparisonAction];
   [alerCtr addAction:cancel];
   [self presentViewController:alerCtr animated:YES completion:^{}];
   
@@ -82,6 +90,13 @@
   
   CvVideoCameraViewController *cvVideoCameraView = [[CvVideoCameraViewController alloc] init];
   [self.navigationController pushViewController:cvVideoCameraView animated:YES];
+  
+}
+
+-(void)faceComparison {
+  
+  KYFaceComparisonVC *faceComparison = [[KYFaceComparisonVC alloc] init];
+  [self.navigationController pushViewController:faceComparison animated:YES];
   
 }
 
