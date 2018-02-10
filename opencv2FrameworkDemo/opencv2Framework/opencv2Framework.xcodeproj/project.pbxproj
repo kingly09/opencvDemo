@@ -16,6 +16,9 @@
 		BC47D7D2202EDB66006C6FB4 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7CF202EDB65006C6FB4 /* 1.jpeg */; };
 		BC47D7D3202EDB66006C6FB4 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7D0202EDB65006C6FB4 /* 3.jpeg */; };
 		BC47D7D4202EDB66006C6FB4 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7D1202EDB66006C6FB4 /* 2.jpeg */; };
+		BC47D7EA202EEB8A006C6FB4 /* ldh_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7E7202EEB8A006C6FB4 /* ldh_03.jpg */; };
+		BC47D7EB202EEB8A006C6FB4 /* ldh_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7E8202EEB8A006C6FB4 /* ldh_01.jpg */; };
+		BC47D7EC202EEB8A006C6FB4 /* ldh_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7E9202EEB8A006C6FB4 /* ldh_02.jpg */; };
 		BC664591202A9EED008F0CB4 /* haarcascade_upperbody.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC664580202A9EED008F0CB4 /* haarcascade_upperbody.xml */; };
 		BC664592202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC664581202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml */; };
 		BC664593202A9EED008F0CB4 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC664582202A9EED008F0CB4 /* haarcascade_profileface.xml */; };
@@ -87,6 +90,9 @@
 		BC47D7CF202EDB65006C6FB4 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
 		BC47D7D0202EDB65006C6FB4 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
 		BC47D7D1202EDB66006C6FB4 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
+		BC47D7E7202EEB8A006C6FB4 /* ldh_03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ldh_03.jpg; sourceTree = "<group>"; };
+		BC47D7E8202EEB8A006C6FB4 /* ldh_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ldh_01.jpg; sourceTree = "<group>"; };
+		BC47D7E9202EEB8A006C6FB4 /* ldh_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ldh_02.jpg; sourceTree = "<group>"; };
 		BC664580202A9EED008F0CB4 /* haarcascade_upperbody.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_upperbody.xml; sourceTree = "<group>"; };
 		BC664581202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalcatface_extended.xml; sourceTree = "<group>"; };
 		BC664582202A9EED008F0CB4 /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_profileface.xml; sourceTree = "<group>"; };
@@ -245,6 +251,9 @@
 				BC47D7CF202EDB65006C6FB4 /* 1.jpeg */,
 				BC47D7D1202EDB66006C6FB4 /* 2.jpeg */,
 				BC47D7D0202EDB65006C6FB4 /* 3.jpeg */,
+				BC47D7E8202EEB8A006C6FB4 /* ldh_01.jpg */,
+				BC47D7E9202EEB8A006C6FB4 /* ldh_02.jpg */,
+				BC47D7E7202EEB8A006C6FB4 /* ldh_03.jpg */,
 				BCBE1A42202408B8006007A0 /* LaunchScreen.storyboard */,
 				BCBE1A45202408B8006007A0 /* Info.plist */,
 				BCBE1A46202408B8006007A0 /* main.m */,
@@ -407,12 +416,14 @@
 				BC47D7D2202EDB66006C6FB4 /* 1.jpeg in Resources */,
 				BC664596202A9EED008F0CB4 /* haarcascade_eye.xml in Resources */,
 				BC664591202A9EED008F0CB4 /* haarcascade_upperbody.xml in Resources */,
+				BC47D7EA202EEB8A006C6FB4 /* ldh_03.jpg in Resources */,
 				BC664599202A9EED008F0CB4 /* haarcascade_licence_plate_rus_16stages.xml in Resources */,
 				BC66459F202A9EED008F0CB4 /* haarcascade_smile.xml in Resources */,
 				BC664597202A9EED008F0CB4 /* haarcascade_lefteye_2splits.xml in Resources */,
 				BC47D7D3202EDB66006C6FB4 /* 3.jpeg in Resources */,
 				BC66459A202A9EED008F0CB4 /* haarcascade_righteye_2splits.xml in Resources */,
 				BC6645A5202AD471008F0CB4 /* haarcascade_frontalface_alt3.xml in Resources */,
+				BC47D7EB202EEB8A006C6FB4 /* ldh_01.jpg in Resources */,
 				BC664592202A9EED008F0CB4 /* haarcascade_frontalcatface_extended.xml in Resources */,
 				BC1AAFAE2029AF9B00D6CD9C /* learn02.jpg in Resources */,
 				BC664595202A9EED008F0CB4 /* haarcascade_frontalface_alt2.xml in Resources */,
@@ -426,6 +437,7 @@
 				BC1AAF4F20298E4A00D6CD9C /* learn.jpg in Resources */,
 				BC66459B202A9EED008F0CB4 /* haarcascade_frontalface_alt.xml in Resources */,
 				BCBE1A3F202408B8006007A0 /* Main.storyboard in Resources */,
+				BC47D7EC202EEB8A006C6FB4 /* ldh_02.jpg in Resources */,
 				BC6645A1202A9EED008F0CB4 /* haarcascade_eye_tree_eyeglasses.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

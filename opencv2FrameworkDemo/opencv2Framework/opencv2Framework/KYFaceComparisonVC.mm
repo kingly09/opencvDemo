@@ -19,6 +19,9 @@
 @property(nonatomic,strong) UIImageView* imageView;
 @property(nonatomic,strong) UIImageView* imageView1;
 
+@property(nonatomic,strong) UIImageView* imageView03;
+@property(nonatomic,strong) UIImageView* imageView04;
+
 @end
 
 @implementation KYFaceComparisonVC
@@ -26,18 +29,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+  self.view.backgroundColor = [UIColor whiteColor];
   
   self.title = @"人脸对比";
   
   //识别的图片
-  UIImage *mImage =  [UIImage imageNamed:@"1.jpg"];
+  UIImage *mImage =  [UIImage imageNamed:@"ldh_01.jpg"];
   IplImage *srcIpl = [self convertToIplImage:mImage];
   IplImage *dscIpl = cvCreateImage(cvGetSize(srcIpl), srcIpl->depth, 1);
   IplImage *dscIplNew = cvCreateImage(cvGetSize(srcIpl),  IPL_DEPTH_8U, 3);
   cvCvtColor(dscIpl, dscIplNew, CV_GRAY2BGR);
   
   //基准图
-  UIImage *mImage1 =  [UIImage imageNamed:@"2.jpeg"];
+  UIImage *mImage1 =  [UIImage imageNamed:@"ldh_03.jpg"];
   IplImage *srcIpl1 = [self convertToIplImage:mImage1];
   IplImage *dscIpl1 = cvCreateImage(cvGetSize(srcIpl1), srcIpl1 ->depth, 1);
   IplImage *dscIplNew1 = cvCreateImage(cvGetSize(srcIpl1), IPL_DEPTH_8U, 3);
@@ -45,21 +49,33 @@
  
   
   _imageView = [[UIImageView alloc] init];
-  _imageView.frame = CGRectMake(20,80,self.view.frame.size.width - 40,300);
+  _imageView.frame = CGRectMake(80,80,self.view.frame.size.width/3,100);
   _imageView.image = mImage;
   _imageView.contentMode =  UIViewContentModeScaleAspectFill;
   [self.view addSubview:_imageView];
   
-  
+
   _imageView1 = [[UIImageView alloc] init];
-  _imageView1.frame = CGRectMake(20,_imageView.frame.origin.y + _imageView.frame.size.height + 10,self.view.frame.size.width - 40,300);
+  _imageView1.frame = CGRectMake(80,_imageView.frame.origin.y + _imageView.frame.size.height + 30,self.view.frame.size.width/3,100);
   _imageView1.image = mImage1;
   _imageView1.contentMode =  UIViewContentModeScaleAspectFill;
   [self.view addSubview:_imageView1];
   
   
+  _imageView03 = [[UIImageView alloc] init];
+  _imageView03.frame = CGRectMake(80,_imageView1.frame.origin.y +  _imageView1.frame.size.height + 30,self.view.frame.size.width/3,100);
+  _imageView03.contentMode =  UIViewContentModeScaleAspectFill;
+  [self.view addSubview:_imageView03];
+  
+  
+  _imageView04 = [[UIImageView alloc] init];
+  _imageView03.frame = CGRectMake(80,_imageView03.frame.origin.y +  _imageView03.frame.size.height + 30,self.view.frame.size.width/3,100);
+  _imageView04.contentMode =  UIViewContentModeScaleAspectFill;
+  [self.view addSubview:_imageView04];
+  
+  
   //基准模版图
-  UIImage *tempImage = [UIImage imageNamed:@"3.jpeg"];
+  UIImage *tempImage = [UIImage imageNamed:@"ldh_02.jpg"];
   IplImage *iplTempImage = [self convertToIplImage:tempImage];
   BOOL tf=[self ComparePPKImage:srcIpl withAnotherImage:srcIpl1 withTempleImage:iplTempImage];
   if (tf) {
@@ -96,10 +112,10 @@
   cropImage =[self cropIplImage:mIplImage withStartPoint:minLoc withWidth:mTempleImage->width withHeight:mTempleImage->height];
   cropImage1=[self cropIplImage:mIplImage1 withStartPoint:minLoc1 withWidth:mTempleImage->width withHeight:mTempleImage->height];
   
-  self.imageView.image=[self convertToUIImage:cropImage];
-  self.imageView1.image=[self convertToUIImage:cropImage1];
+//  self.imageView.image =[self convertToUIImage:cropImage];
+//  self.imageView1.image =[self convertToUIImage:cropImage1];
   
-  double rst = [self CompareHist:cropImage withParam2:cropImage1];
+  double rst = [self CompareHist:mIplImage withParam2:mIplImage1];
   if (rst< 0.18) {
     return true;
   }
@@ -109,7 +125,7 @@
   }
 }
 
-/// 基于模板图片的标记识别
+/// 基于模板图片的标记识别 (用模版图片要需要标记图片)
 -(CvPoint)CompareTempleImage:(IplImage*)templeIpl withImage:(IplImage*)mIplImage
 {
   IplImage *src = mIplImage;
