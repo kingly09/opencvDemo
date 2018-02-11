@@ -44,6 +44,7 @@
   
   [self loadClassifier];
   [self startCamera];
+  
 }
 
 
