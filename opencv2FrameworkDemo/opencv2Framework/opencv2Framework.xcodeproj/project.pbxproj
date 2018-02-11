@@ -309,8 +309,6 @@
 		BCBE1A2B202408B8006007A0 = {
 			isa = PBXGroup;
 			children = (
-				BC1AAF502029992500D6CD9C /* HaartrainingViewController.h */,
-				BC1AAF512029992500D6CD9C /* HaartrainingViewController.mm */,
 				BCBE1A36202408B8006007A0 /* opencv2Framework */,
 				BCBE1A4F202408B8006007A0 /* opencv2FrameworkTests */,
 				BCBE1A5A202408B8006007A0 /* opencv2FrameworkUITests */,
@@ -342,6 +340,8 @@
 				BCBE1A7520241607006007A0 /* UIImage+OpenCV.mm */,
 				BCBE1A3A202408B8006007A0 /* ViewController.h */,
 				BCBE1A3B202408B8006007A0 /* ViewController.mm */,
+				BC1AAF502029992500D6CD9C /* HaartrainingViewController.h */,
+				BC1AAF512029992500D6CD9C /* HaartrainingViewController.mm */,
 				BCBE1A3D202408B8006007A0 /* Main.storyboard */,
 				BC1AAFAB2029AF9B00D6CD9C /* learn02.jpg */,
 				BC1AAFA92029AF9A00D6CD9C /* learn03.jpg */,
