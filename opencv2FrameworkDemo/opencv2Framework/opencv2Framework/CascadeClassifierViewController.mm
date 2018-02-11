@@ -50,7 +50,7 @@
 
 -(void)loadClassifier{
   
-  NSString* pathToModel = [[NSBundle mainBundle] pathForResource:@"cv_haarcascade_frontalface_default" ofType:@"xml"];
+  NSString* pathToModel = [[NSBundle mainBundle] pathForResource:@"cv_haarcascade_mcs_mouth" ofType:@"xml"];
   const CFIndex CASCADE_NAME_LEN = 2048;
   char *CASCADE_NAME = (char *) malloc(CASCADE_NAME_LEN);
   CFStringGetFileSystemRepresentation( (CFStringRef)pathToModel, CASCADE_NAME, CASCADE_NAME_LEN);
@@ -61,7 +61,7 @@
 
 -(void)startCamera {
   
-  self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.theImageView];
+  self.videoCamera = [[CvVideoCamera alloc] initWithParentView:self.view];
   
   self.videoCamera.defaultAVCaptureDevicePosition = AVCaptureDevicePositionFront;
   self.videoCamera.defaultAVCaptureSessionPreset = AVCaptureSessionPreset640x480;
@@ -106,7 +106,7 @@
   double scalingFactor = 1.1;
   int minNeighbors = 20;
   int flags = 0;
-  int theMinSize = 64;
+  int theMinSize = 32;
   int theMaxSize = 480;
   
   cv::Size minimumSize(theMinSize,theMinSize);
