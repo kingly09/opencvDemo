@@ -19,7 +19,7 @@
 		BC47D7EA202EEB8A006C6FB4 /* ldh_03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7E7202EEB8A006C6FB4 /* ldh_03.jpg */; };
 		BC47D7EB202EEB8A006C6FB4 /* ldh_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7E8202EEB8A006C6FB4 /* ldh_01.jpg */; };
 		BC47D7EC202EEB8A006C6FB4 /* ldh_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC47D7E9202EEB8A006C6FB4 /* ldh_02.jpg */; };
-		BC47D7EF202EF6D7006C6FB4 /* CascadeClassifierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC47D7EE202EF6D7006C6FB4 /* CascadeClassifierViewController.m */; };
+		BC47D7EF202EF6D7006C6FB4 /* CascadeClassifierViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BC47D7EE202EF6D7006C6FB4 /* CascadeClassifierViewController.mm */; };
 		BC53EDAF202FE997007BBBC0 /* cv_haarcascade_eye.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC53EDAA202FE997007BBBC0 /* cv_haarcascade_eye.xml */; };
 		BC53EDB0202FE997007BBBC0 /* cv_haarcascade_eye_tree_eyeglasses.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC53EDAB202FE997007BBBC0 /* cv_haarcascade_eye_tree_eyeglasses.xml */; };
 		BC53EDB1202FE997007BBBC0 /* cv_haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = BC53EDAC202FE997007BBBC0 /* cv_haarcascade_mcs_mouth.xml */; };
@@ -100,7 +100,7 @@
 		BC47D7E8202EEB8A006C6FB4 /* ldh_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ldh_01.jpg; sourceTree = "<group>"; };
 		BC47D7E9202EEB8A006C6FB4 /* ldh_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ldh_02.jpg; sourceTree = "<group>"; };
 		BC47D7ED202EF6D7006C6FB4 /* CascadeClassifierViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CascadeClassifierViewController.h; sourceTree = "<group>"; };
-		BC47D7EE202EF6D7006C6FB4 /* CascadeClassifierViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CascadeClassifierViewController.m; sourceTree = "<group>"; };
+		BC47D7EE202EF6D7006C6FB4 /* CascadeClassifierViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CascadeClassifierViewController.mm; sourceTree = "<group>"; };
 		BC53EDAA202FE997007BBBC0 /* cv_haarcascade_eye.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cv_haarcascade_eye.xml; sourceTree = "<group>"; };
 		BC53EDAB202FE997007BBBC0 /* cv_haarcascade_eye_tree_eyeglasses.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cv_haarcascade_eye_tree_eyeglasses.xml; sourceTree = "<group>"; };
 		BC53EDAC202FE997007BBBC0 /* cv_haarcascade_mcs_mouth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cv_haarcascade_mcs_mouth.xml; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 				BC47D7CC202ED62F006C6FB4 /* KYFaceComparisonVC.h */,
 				BC47D7CD202ED62F006C6FB4 /* KYFaceComparisonVC.mm */,
 				BC47D7ED202EF6D7006C6FB4 /* CascadeClassifierViewController.h */,
-				BC47D7EE202EF6D7006C6FB4 /* CascadeClassifierViewController.m */,
+				BC47D7EE202EF6D7006C6FB4 /* CascadeClassifierViewController.mm */,
 			);
 			path = opencv2Framework;
 			sourceTree = "<group>";
@@ -500,7 +500,7 @@
 				BCBE1A7720241608006007A0 /* UIImage+OpenCV.mm in Sources */,
 				BC7529A3202B02E200CD4549 /* CvVideoCameraViewController.mm in Sources */,
 				BCBE1A3C202408B8006007A0 /* ViewController.mm in Sources */,
-				BC47D7EF202EF6D7006C6FB4 /* CascadeClassifierViewController.m in Sources */,
+				BC47D7EF202EF6D7006C6FB4 /* CascadeClassifierViewController.mm in Sources */,
 				BC47D7CE202ED62F006C6FB4 /* KYFaceComparisonVC.mm in Sources */,
 				BCBE1A47202408B8006007A0 /* main.m in Sources */,
 				BCBE1A39202408B8006007A0 /* AppDelegate.mm in Sources */,
